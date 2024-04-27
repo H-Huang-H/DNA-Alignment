@@ -9,6 +9,7 @@ EvolutionModel::EvolutionModel(const std::string& initialSequence, double subRat
             }
 
 void EvolutionModel::simulateEvolution() {
+
     double timeSubstitution = generateExponentialTime(substitutionRate);
     double timeInsertion = generateExponentialTime(insertionRate);
     double timeDeletion = generateExponentialTime(deletionRate);
